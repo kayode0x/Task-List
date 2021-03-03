@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.75rem;
+    margin: 20px 0 20px 0;
+}
+
+label {
+    color: rgb(173, 173, 173);
+    font-size: .85rem;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333; 
+    margin: 1px 0 30px 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: 40rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.column {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createTasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25%;
+    width: 80%;
+}
+
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#taskInput:focus {
+    border-bottom: 1.5px solid #4caf50;
+}
+
+.btn {
+    outline: none;
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    transition: all .2s ease-in;
+}
+
+.normal {
+    background-color: #4caf50;
+}
+.normal:hover {
+    background-color: #388e3c;
+}
+
+.taskFilter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: inherit;
+    margin-top: 30px;
+}
+
+#filter {
+    margin: 0px 0 20px 0;
+}
+#filter:focus {
+    border-bottom: 1.5px solid #000;
+}
+
+.listItems {
+    height: fit-content;
+    max-height: 15rem;
+    overflow-y: auto;
+    width: 100%;
+    margin: 0px 0 20px 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-in;
+}
+
+.dark{
+    background-color: #000;
+    margin: 0px 0 30px 0;
+}
+.dark:hover {
+    background-color: #d32f2f;
+    color: #fff;
+}

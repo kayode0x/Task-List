@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
         <title>Task List</title>
     </head>
 
@@ -14,18 +16,16 @@
                 <div class="createTasks">
                     <h3>Task List</h3>
                     <form id="taskForm">
-                        <label for="taskInput">New Task</label>
-                        <input type="text" name="task" id="taskInput">
+                        <input type="text" name="task" id="taskInput" maxlength=35 placeholder="Add a new task">
                         <input type="submit" value="ADD TASK" class="btn normal">
                     </form>
                 </div>
 
                 <div class="taskFilter">
                     <h3>Tasks</h3>
-                    <label for="filter">Filter Task</label>
-                    <input type="text" name="filter" id="filter">
+                    <input type="text" name="filter" id="filter" maxlength=35 placeholder="Filter tasks">
                     <div class="listItems">
-                        
+                        <ul class="collection"></ul>
                     </div>
                     <button class="clearTasks btn dark">CLEAR TASKS</button>
                 </div>

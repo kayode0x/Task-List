@@ -1,24 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
     background: url("https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center/cover; 
-}
-
-h3 {
+} h3 {
     color: #fff;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1.75rem;
     margin: 20px 0 20px 0;
-}
-
-input {
+} input {
     background-color: transparent;
     outline: none;
     border: none;
@@ -29,7 +23,6 @@ input {
     font-size: 1rem;
     transition: all .5s ease-in-out;
 }
-
 .container {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 4px;
@@ -41,7 +34,6 @@ input {
     width: calc(20rem + 5vw);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .column {
     height: 100%;
     width: 90%;
@@ -49,7 +41,6 @@ input {
     flex-direction: column;
     align-items: center;
 }
-
 .createTasks {
     display: flex;
     flex-direction: column;
@@ -57,17 +48,13 @@ input {
     height: 25%;
     width: 80%;
 }
-
 #taskForm {
     display: flex;
     flex-direction: column;
     text-align: left;
-}
-
-#taskInput:focus {
+} #taskInput:focus {
     border-bottom: 1.5px solid #4caf50;
 }
-
 .btn {
     outline: none;
     width: 7rem;
@@ -78,16 +65,12 @@ input {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1rem;
     transition: all .2s ease-in;
-}
-
-.normal {
+} .normal {
     background-color: #4caf50;
     margin-top: 20px;
-}
-.normal:hover {
+} .normal:hover {
     background-color: #388e3c;
 }
-
 .taskFilter {
     display: flex;
     flex-direction: column;
@@ -95,12 +78,9 @@ input {
     width: 80%;
     height: inherit;
     margin-top: 30px;
-}
-
-#filter:focus {
+} #filter:focus {
     border-bottom: 1.5px solid #fff;
 }
-
 .collection {
     height: fit-content;
     max-height: 15rem;
@@ -122,22 +102,18 @@ li {
     border: 1px solid rgba(255, 255, 255, 0.9);
     transition: all 0.5s ease-in;
 }
-
 .fas {
     color: #d32f2f;
     font-size: 1rem;
     transition: all 0.5s ease;
-}
-
-.fas:hover {
+} .fas:hover {
     color: #e57373;
 }
 
 .dark{
     background-color: #d32f2f;
     margin: 0 0 30px 0;
-}
-.dark:hover {
+} .dark:hover {
     background-color: #ef5350;
     color: #fff;
 }
